@@ -84,6 +84,10 @@ p {
     border: 0px;
 }
 
+.bg-dark {
+    background-color: #1f242a !important;
+}
+
 .card {
     border-radius: 10px;
     border-bottom: 15px #21E6C1 solid;
