@@ -33,7 +33,7 @@
     
 <main>
   <div id="stars"></div>
-  <div>
+  <div class="content">
     <header class="px-5 py-2 pb-md-3">
       <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
         <img class="mx-auto" width="150" src="jumbotron/assets/images/logo-light-simple.png">
@@ -42,13 +42,18 @@
 
     <div class="p-md-5 my-4 rounded-3">
       <div class="text-center text-white py-4">
-        <h1 id="typing-text" class="display-3">Header goes here.</h1>
+        <h1 class="display-3">Header goes
+          <span
+          class="txt-rotate"
+          data-period="2000"
+          data-rotate='[ "here.", "there.", "everywhere." ]'></span>
+        </h1>
         <p class="mx-auto mt-3 col-md-8 fs-5">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
         <button class="mt-3 btn btn-primary btn-lg py-2" type="button">Example button</button>
       </div>
     </div>
 
-    <div class="row row-cols-1 row-cols-md-2 g-4 my-4 mx-5">
+    <div class="row row-cols-1 row-cols-md-2 g-4 my-4 mx-1 mx-md-5">
       <div class="col text-center">
         <div class="card p-5">
           <div class="card-body">
@@ -69,7 +74,7 @@
       </div>
     </div>
 
-    <div class="row mt-4 mx-5">
+    <div class="row mt-4 mx-1 mx-md-5">
       <div class="col text-center">
       <div class="card unround text-center p-5">
           <div class="card-body">
@@ -81,8 +86,8 @@
       </div>  
     </div>
 
-    <footer class="pt-4 pb-2 bg-white text-center">
-      <p>Copyright Caligo Development, 2021.</p>
+    <footer class="bg-white text-center">
+      <p class="py-2">Copyright Caligo Development, 2021.</p>
     </footer>
   </div>
 </main>

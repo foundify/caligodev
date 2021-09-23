@@ -1,86 +1,56 @@
-TypingText = function(element, interval, cursor, finishedCallback) {
-  if((typeof document.getElementById == "undefined") || (typeof element.innerHTML == "undefined")) {
-    this.running = true;	// Never run.
-    return;
-  }
-  this.element = element;
-  this.finishedCallback = (finishedCallback ? finishedCallback : function() { return; });
-  this.interval = (typeof interval == "undefined" ? 100 : interval);
-  this.origText = this.element.innerHTML;
-  this.unparsedOrigText = this.origText;
-  this.cursor = (cursor ? cursor : "");
-  this.currentText = "";
-  this.currentChar = 0;
-  this.element.typingText = this;
-  if(this.element.id == "") this.element.id = "typingtext" + TypingText.currentIndex++;
-  TypingText.all.push(this);
-  this.running = false;
-  this.inTag = false;
-  this.tagBuffer = "";
-  this.inHTMLEntity = false;
-  this.HTMLEntityBuffer = "";
-}
-TypingText.all = new Array();
-TypingText.currentIndex = 0;
-TypingText.runAll = function() {
-  for(var i = 0; i < TypingText.all.length; i++) TypingText.all[i].run();
-}
-TypingText.prototype.run = function() {
-  if(this.running) return;
-  if(typeof this.origText == "undefined") {
-    setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);	// We haven't finished loading yet.  Have patience.
-    return;
-  }
-  if(this.currentText == "") this.element.innerHTML = "";
-//  this.origText = this.origText.replace(/<([^<])*>/, "");     // Strip HTML from text.
-  if(this.currentChar < this.origText.length) {
-    if(this.origText.charAt(this.currentChar) == "<" && !this.inTag) {
-      this.tagBuffer = "<";
-      this.inTag = true;
-      this.currentChar++;
-      this.run();
-      return;
-    } else if(this.origText.charAt(this.currentChar) == ">" && this.inTag) {
-      this.tagBuffer += ">";
-      this.inTag = false;
-      this.currentText += this.tagBuffer;
-      this.currentChar++;
-      this.run();
-      return;
-    } else if(this.inTag) {
-      this.tagBuffer += this.origText.charAt(this.currentChar);
-      this.currentChar++;
-      this.run();
-      return;
-    } else if(this.origText.charAt(this.currentChar) == "&" && !this.inHTMLEntity) {
-      this.HTMLEntityBuffer = "&";
-      this.inHTMLEntity = true;
-      this.currentChar++;
-      this.run();
-      return;
-    } else if(this.origText.charAt(this.currentChar) == ";" && this.inHTMLEntity) {
-      this.HTMLEntityBuffer += ";";
-      this.inHTMLEntity = false;
-      this.currentText += this.HTMLEntityBuffer;
-      this.currentChar++;
-      this.run();
-      return;
-    } else if(this.inHTMLEntity) {
-      this.HTMLEntityBuffer += this.origText.charAt(this.currentChar);
-      this.currentChar++;
-      this.run();
-      return;
-    } else {
-      this.currentText += this.origText.charAt(this.currentChar);
-    }
-    this.element.innerHTML = this.currentText;
-    this.element.innerHTML += (this.currentChar < this.origText.length - 1 ? (typeof this.cursor == "function" ? this.cursor(this.currentText) : this.cursor) : "");
-    this.currentChar++;
-    setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);
+var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
   } else {
-	this.currentText = "";
-	this.currentChar = 0;
-        this.running = false;
-        this.finishedCallback();
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
-}
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 300 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #21E6C1 }";
+  document.body.appendChild(css);
+};

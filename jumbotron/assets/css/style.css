@@ -3,6 +3,11 @@ html, body {
     height: 100%;
 }
 
+.content {
+    position: relative;
+    z-index: 1;
+}
+
 @font-face {
     font-family: "Circular Std Bold";
     src: url("../fonts/Circular\ Std\ Bold.ttf");
@@ -68,6 +73,7 @@ p {
 #stars {
     width: 3px;
     height: 3px;
+    z-index: -1;
     background: transparent;
     box-shadow: 1738px 276px #FFF , 1291px 1277px #FFF , 1371px 1138px #FFF , 1552px 1938px #FFF , 1239px 10px #FFF , 1956px 1630px #FFF , 1657px 1177px #FFF , 1264px 514px #FFF , 1001px 604px #FFF , 809px 935px #FFF , 490px 1196px #FFF , 375px 1575px #FFF , 1265px 847px #FFF , 540px 10px #FFF , 99px 1239px #FFF , 316px 1999px #FFF , 615px 83px #FFF , 927px 922px #FFF , 1915px 516px #FFF , 785px 222px #FFF , 780px 326px #FFF , 62px 499px #FFF , 1296px 1923px #FFF , 923px 1334px #FFF , 850px 128px #FFF , 1673px 1621px #FFF , 331px 1171px #FFF , 1431px 1002px #FFF , 26px 1226px #FFF , 1567px 678px #FFF , 252px 171px #FFF , 1695px 806px #FFF , 1382px 1786px #FFF , 658px 332px #FFF , 621px 1846px #FFF , 1685px 1607px #FFF , 1465px 29px #FFF , 396px 1383px #FFF , 1629px 1569px #FFF , 173px 708px #FFF , 1108px 968px #FFF , 1047px 284px #FFF , 104px 809px #FFF , 803px 672px #FFF , 183px 1638px #FFF , 891px 1659px #FFF , 629px 631px #FFF , 347px 371px #FFF , 1383px 816px #FFF , 1632px 879px #FFF , 548px 1569px #FFF , 1738px 364px #FFF , 15px 183px #FFF , 1366px 774px #FFF , 1724px 965px #FFF , 432px 1365px #FFF , 1805px 1355px #FFF , 177px 1510px #FFF , 365px 771px #FFF , 1952px 1082px #FFF , 180px 268px #FFF , 1180px 1436px #FFF , 1809px 1989px #FFF , 1710px 1495px #FFF , 1215px 1322px #FFF , 913px 1240px #FFF , 1976px 1359px #FFF , 1943px 916px #FFF , 1644px 811px #FFF , 469px 1810px #FFF , 932px 51px #FFF , 851px 426px #FFF , 459px 2px #FFF , 1563px 727px #FFF , 1201px 473px #FFF , 1851px 889px #FFF , 968px 1266px #FFF , 1524px 895px #FFF , 1614px 415px #FFF , 1802px 691px #FFF , 1485px 453px #FFF , 95px 438px #FFF , 1734px 305px #FFF , 408px 848px #FFF , 1333px 885px #FFF , 381px 1324px #FFF , 1146px 166px #FFF , 745px 351px #FFF , 729px 1119px #FFF , 1994px 478px #FFF , 1669px 210px #FFF , 1237px 1160px #FFF , 458px 665px #FFF , 738px 568px #FFF , 709px 300px #FFF , 1311px 292px #FFF , 1470px 1907px #FFF , 1529px 786px #FFF , 1825px 1929px #FFF , 789px 1189px #FFF;
     animation: animStar 150s linear infinite;
