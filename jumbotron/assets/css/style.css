@@ -16,13 +16,21 @@ html, body {
     font-family: "Space Mono";
     src: url("../fonts/Space\ Mono.ttf");
 }
+@font-face {
+    font-family: "Space Mono Italic";
+    src: url("../fonts/Space\ Mono\ Italic.ttf");
+}
+
+p em {
+    font-family: "Space Mono Italic", monospace;
+}
 
 h1, h2, h3, h4, h5, .btn {
     font-family: "Circular Std Bold", sans-serif;
 }
 
 p {
-    font-family:"Space Mono", sans-serif;
+    font-family:"Space Mono", monospace;
     letter-spacing: -0.5px;
 }
 
