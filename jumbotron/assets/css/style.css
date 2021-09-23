@@ -1,7 +1,22 @@
 html,
 body {
-    background: linear-gradient(135deg, #1f242a, #0d204b) no-repeat;
+    background: linear-gradient(217deg, #1f242a, #0d204b);
+    background-size: 400% 400%;
+
+    -webkit-animation: BackgroundAnimate 5s ease infinite;
+    animation: BackgroundAnimate 5s ease infinite;
     min-height: 100%;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
 }
 
 body {
