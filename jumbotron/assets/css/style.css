@@ -1,6 +1,11 @@
-html, body {
-    background: radial-gradient(#0d204b 0%, #1f242a 80%);
-    height: 100%;
+html,
+body {
+    background: linear-gradient(#1f242a, #0d204b) no-repeat;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: -20px;
 }
 
 .content {
