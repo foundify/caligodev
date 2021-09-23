@@ -74,8 +74,11 @@ p {
     border-bottom-right-radius: 0px !important;
 }
 
-.border-blank {
-    border-bottom: 15px #fff solid !important;
+.border-none {
+    border: 0px !important;
+}
+.border-footer {
+    border-top: 15px #21E6C1 solid !important;
 }
 
 #stars {
