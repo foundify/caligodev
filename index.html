@@ -10,6 +10,8 @@
     <!-- Bootstrap core CSS -->
     <link href="bootstrap-5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="jumbotron/assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
     <style>
       .bd-placeholder-img {
@@ -41,7 +43,7 @@
     </header>
 
     <div class="p-md-5 my-4 rounded-3">
-      <div class="col col-md-6 text-center text-white mx-3 mx-md-auto py-4">
+      <div class="col col-md-6 text-center text-white mx-3 mx-md-auto py-5">
         <h1 class="display-3">Header goes
           <span
           class="txt-rotate"
@@ -54,7 +56,7 @@
     </div>
 
     <div class="row row-cols-1 row-cols-md-2 g-4 my-4 mx-1 mx-md-5">
-      <div class="col text-center">
+      <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100" class="col text-center">
         <div class="card p-5">
           <div class="card-body">
             <h1 class="card-title">Brand Strategy & Consulting</h1>
@@ -63,7 +65,7 @@
           </div>
         </div>
       </div>
-      <div class="col text-center">
+      <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100" class="col text-center">
         <div class="card p-5">
           <div class="card-body">
             <h1 class="card-title">Digital Marketing</h1>
@@ -74,7 +76,7 @@
       </div>
     </div>
 
-    <div class="row mt-4 mx-1 mx-md-5">
+    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="row mt-4 mx-1 mx-md-5">
       <div class="col text-center">
       <div class="card border-none unround text-center p-5">
           <div class="card-body">
@@ -96,9 +98,11 @@
   <script type="text/javascript" src="jumbotron/assets/typing.js"></script>
   <script type="text/javascript">
     new TypingText(document.getElementById("typing-text"));
-
     TypingText.runAll();
-    </script>
-    
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
