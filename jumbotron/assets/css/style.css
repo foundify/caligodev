@@ -184,13 +184,13 @@ p {
   }
 
 input {
-    font-family: "Circular Std Book", sans-serif;
+    font-family: "Circular Std Bold", sans-serif;
     border-radius: 10px !important;
 }
-::-webkit-input-placeholder { font-family: "Circular Std Book", sans-serif; } /* Chrome/Opera/Safari */
-::-moz-placeholder { font-family: "Circular Std Book", sans-serif; } /* firefox 19+ */
-:-ms-input-placeholder { font-family: "Circular Std Book", sans-serif; } /* ie */
-:-moz-placeholder { font-family: "Circular Std Book", sans-serif; } /*below firefox 19 */
+::-webkit-input-placeholder { font-family: "Circular Std Bold", sans-serif; } /* Chrome/Opera/Safari */
+::-moz-placeholder { font-family: "Circular Std Bold", sans-serif; } /* firefox 19+ */
+:-ms-input-placeholder { font-family: "Circular Std Bold", sans-serif; } /* ie */
+:-moz-placeholder { font-family: "Circular Std Bold", sans-serif; } /*below firefox 19 */
 
 .dropdown-menu {
     left: -25%;
