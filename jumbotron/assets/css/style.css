@@ -1,31 +1,22 @@
 html,
 body {
-    background: linear-gradient(217deg, #1f242a, #0d204b);
-    background-size: 400% 400%;
-
-    -webkit-animation: BackgroundAnimate 5s ease infinite;
-    animation: BackgroundAnimate 5s ease infinite;
+    background: #0d204b;
+    margin-top: -5px;
     min-height: 100%;
+    overflow-x: hidden;
 }
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 99%}
-    50%{background-position:100% 2%}
-    100%{background-position:0% 99%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 99%}
-    50%{background-position:100% 2%}
-    100%{background-position:0% 99%}
+.section-top {
+    background:  linear-gradient(#1f242a, #0d204b);
 }
 
 body {
     margin-bottom: -20px;
 }
 
-.content {
+.content, footer {
     position: relative;
-    z-index: 1;
+    z-index: 1 !important;
 }
 
 @font-face {
@@ -43,15 +34,23 @@ body {
 
 p em {
     font-family: "Space Mono Italic", monospace;
+    letter-spacing: -0.75px;
 }
 
-h1, h2, h3, h4, h5, .btn {
+h1, h2, h3, h4, h5, .btn, .nav-item {
     font-family: "Circular Std Bold", sans-serif;
+}
+
+.nav-link {
+    color: #fff;
+}
+.nav-link:hover {
+    color: #ddd;
 }
 
 p {
     font-family:"Space Mono", monospace;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.75px;
 }
 
 .bg-primary {
@@ -60,6 +59,8 @@ p {
 
 .btn {
     border-radius: 10px;
+    z-index: 1 !important;
+    position: relative;
 }
 
 .btn-lg {
@@ -83,12 +84,29 @@ p {
     color: #ffffff !important;
     border: 0px;
 }
+.btn-outline-secondary {
+    border-color: #1F4287 !important;
+    color: #1F4287 !important;
+}
+.btn-half {
+    max-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .bg-dark {
     background-color: #1f242a !important;
 }
 
 .card {
+    border-radius: 10px;
+}
+
+.card-border-all {
+    border: 15px #21E6C1 solid;
+}
+
+.card-border-bottom {
     border-radius: 10px;
     border-bottom: 15px #21E6C1 solid;
 }
@@ -156,3 +174,12 @@ p {
       transform: translateY(-2000px);
     }
   }
+
+input {
+    font-family: "Circular Std Book", sans-serif;
+    border-radius: 10px !important;
+}
+.dropdown-menu {
+    left: -25% !important;
+    text-align: center;
+}
