@@ -1,4 +1,8 @@
-html,
+html {
+    background-color: #1f242a;
+}
+
+
 body {
     background: #0d204b;
     margin-top: -5px;
