@@ -201,19 +201,6 @@ input {
     width: 100vw !important;
 }
 
-.dropdown .dropdown-menu {
-    -webkit-transition: all 0.3s ;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-
-.dropdown.open .dropdown-menu { /* For Bootstrap 4, use .dropdown.show instead of .dropdown.open */
-    max-height: 300px;
-    opacity: 1;
-}
-
 .navbar-toggler,.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
     outline: none !important;
     box-shadow: none !important;
