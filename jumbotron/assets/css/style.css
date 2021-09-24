@@ -179,7 +179,7 @@ p {
     }
   }
 
-input, ::placeholder {
+input, input::placeholder {
     font-family: "Circular Std Book", sans-serif;
     border-radius: 10px !important;
 }
