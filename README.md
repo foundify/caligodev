@@ -1,4 +1,4 @@
-# Caligo Website
+# Caligo Website [![Netlify Status](https://api.netlify.com/api/v1/badges/739cd4db-33ec-481e-ae04-aac8d9e51427/deploy-status)](https://app.netlify.com/sites/caligo/deploys)
 
 ### Color Palette
 - ![#FFFFFF](https://via.placeholder.com/15/FFFFFF/000000?text=+) `#FFFFFF`
