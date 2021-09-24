@@ -175,7 +175,7 @@ p {
     }
   }
 
-input {
+input, ::placeholder {
     font-family: "Circular Std Book", sans-serif;
     border-radius: 10px !important;
 }
@@ -183,3 +183,32 @@ input {
     left: -25% !important;
     text-align: center;
 }
+
+.navbar-toggler,.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .visible {
+    display: block;
+  }
+  .down-tri {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 35px 0 35px;
+    border-color: #e3e9ec transparent transparent transparent;
+  }
+
+  .navbar-toggler span {
+      font-family: 'Space Mono', monospace;
+      color: #fff !important;
+  }
+
+  .navbar-dark .navbar-toggler {
+      border: none !important;
+  }
