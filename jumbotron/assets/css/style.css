@@ -187,7 +187,7 @@ p {
     }
   }
 
-input {
+input, label {
     font-family: "Circular Std Bold", sans-serif;
     border-radius: 10px !important;
 }
