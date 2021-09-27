@@ -56,6 +56,10 @@ h1, h2, h3, h4, h5, .btn, .nav-item {
     color: #ddd;
 }
 
+.text-dark {
+    color: #1f242a !important;
+}
+
 p {
     font-family:"Space Mono", monospace;
     letter-spacing: -0.75px;
@@ -193,12 +197,11 @@ input {
 :-moz-placeholder { font-family: "Circular Std Bold", sans-serif; } /*below firefox 19 */
 
 .dropdown-menu {
-    left: -25%;
-    text-align: center;
+    left: -20% !important;
+    text-align: center !important;
 }
 .dropdown-mobile-menu {
-    left: -20% !important;
-    width: 100vw !important;
+    left: -5% !important;
 }
 
 .navbar-toggler,.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
