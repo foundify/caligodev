@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -95,17 +94,17 @@
 
     <div class="p-md-5 my-4 rounded-3 row align-items-center">
       <div class="col col-md-5 text-white mx-3 mx-md-auto py-3 py-md-5">
-        <h1 class="display-2">Helping you with<br>
+        <h1 class="display-3">Helping you with<br>
           <span class="txt-rotate" data-period="2000" data-rotate='[ "website design.", "marketing.", "consulting." ]'></span>
         </h1>
         <p class="mt-3" style="font-size: 1.25rem;">We take a <em>client-focused approach</em> to our design, development, and consulting services when it comes to fulfilling your needs by listening to your goals and project requirements upfront.</p>
       </div>
       <div class="col col-md-4 text-center mx-3 mx-md-auto">
-        <div class="card card-border-bottom h-100 pt-3 pb-4 px-3">
+        <div class="card card-border-bottom h-100 pt-2 pb-3 px-3">
           <div class="card-body">
             <form>
               <div class="row my-auto g-3">
-                <h1>Ready to get to work?</h1>
+                <h1 class="display-6">Ready to get to work?</h1>
                 <input type="email" class="form-control form-control-lg" id="inputEmail3" placeholder="Company Email">
                 <button type="submit" class="btn btn-lg btn-primary">Request Info</button>
               </div>
@@ -148,7 +147,7 @@
 
     <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="row mt-4 mx-1 mx-md-5">
       <div class="col text-center">
-      <div class="card border-none unround text-center p-5">
+      <div class="card border-none unround text-center">
         <div class="px-4 pt-5 text-center">
           <h1 class="card-title">Centered screenshot</h1>
           <div class="col-lg-6 mx-auto">
@@ -157,6 +156,11 @@
               <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
               <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
             </div>
+          </div>
+          <div class="overflow-hidden screenshots" style="max-height: 45vh;">
+            <img src="/jumbotron/assets/images/screenshot1.png" class="img-fluid shadow screenshot" width="900">
+            <img src="/jumbotron/assets/images/screenshot2.png" class="img-fluid shadow screenshot" width="900">
+            <img src="/jumbotron/assets/images/screenshot3.png" class="img-fluid shadow screenshot" width="900">
           </div>
         </div>
        </div>
@@ -179,6 +183,24 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+  <script>
+    var images = [];
+    images[0] = "/jumbotron/assets/images/screenshot1.png";
+    images[1] = "/jumbotron/assets/images/screenshot2.png";
+    images[2] = "/jumbotron/assets/images/screenshot3.png";
+
+    var i = 0;
+    setInterval(fadeDivs, 6000);
+
+    function fadeDivs() {
+        i = i < images.length ? i : 0;
+        console.log(i)
+        $('.screenshots img').fadeOut(700, function(){
+            $(this).attr('src', images[i]).fadeIn(700);
+        })
+        i++;
+    }
   </script>
   </body>
 </html>
