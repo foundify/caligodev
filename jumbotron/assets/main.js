@@ -66,4 +66,4 @@ $(document).ready(function () {
 
 $('.screenshots').carousel({
   interval: 4500
-})
+});
