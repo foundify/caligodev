@@ -63,7 +63,3 @@ $(document).ready(function () {
       $(".close").toggleClass("hidden");
   });
 });
-
-$('.screenshots').carousel({
-  interval: 4500
-});
