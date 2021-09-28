@@ -232,3 +232,9 @@ input, label {
   .navbar-dark .navbar-toggler {
       border: none !important;
   }
+
+  .carousel {
+      position: relative;
+      max-height: 500px;
+      margin-bottom: -10px;
+  }
