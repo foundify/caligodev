@@ -238,3 +238,7 @@ input, label {
       max-height: 500px;
       margin-bottom: -10px;
   }
+
+  .rounded-form {
+      border-radius: 10px;
+  }
