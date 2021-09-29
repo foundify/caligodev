@@ -239,6 +239,10 @@ input, label {
       margin-bottom: -10px;
   }
 
+  .carousel-inner {
+      overflow: visible !important;
+  }
+
   .rounded-form {
       border-radius: 10px;
   }
