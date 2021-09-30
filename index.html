@@ -114,9 +114,19 @@
       <div class="col mx-auto col-lg-5">
         <form class="p-5 rounded-form bg-white card-border-bottom" name="Leads" netlify>
           <h1 class="text-center mb-3">Ready to get to work?</h1>
-          <div class="form-floating mb-3">
-            <input name="Full Name" type="text" class="form-control" id="fullName" placeholder="John Doe" required>
-            <label for="fullName">Full Name</label>
+          <div class="row">
+            <div class="col">
+              <div class="form-floating mb-3">
+                <input name="First Name" type="text" class="form-control" id="fName" placeholder="John" required>
+                <label for="fName">First Name</label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-floating mb-3">
+                <input name="Last Name" type="text" class="form-control" id="lName" placeholder="Doe" required>
+                <label for="lName">Last Name</label>
+              </div>
+            </div>
           </div>
           <div class="form-floating mb-3">
             <input name="Email" type="email" class="form-control" id="emailAddress" placeholder="name@example.com" required>
