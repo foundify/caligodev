@@ -1,205 +1,226 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <title>Caligo Development | Business Consulting & Website Design</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="bootstrap-5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="jumbotron/assets/css/style.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>Caligo Development | Business Consulting & Website Design</title>
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrap-5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="jumbotron/assets/css/style.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
       }
+    }
+  </style>
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    
-    <script type="text/javascript" src="/bootstrap-5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/bootstrap-5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VZ8XK4ZHF8"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VZ8XK4ZHF8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-        gtag('config', 'G-VZ8XK4ZHF8');
-    </script>
-    
-  </head>
-  <body>
-    
-<main>
-  <div id="stars"></div>
-  <div id="stars2"></div>
-  <div class="content">
+    gtag('config', 'G-VZ8XK4ZHF8');
+  </script>
 
-  <div class="section-top">
+</head>
+
+<body>
+
+  <main>
     <div id="stars"></div>
     <div id="stars2"></div>
-    <!-- Desktop Menu -->
-    <header class="px-5 py-2 pb-md-3 text-white d-md-block d-none">
-      <div class="d-flex align-items-center justify-content-center nav">
-        <span class="nav-item dropdown">
-          <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Offerings
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Web</a></li>
-            <li><a class="dropdown-item" href="#">Marketing</a></li>
-            <li><a class="dropdown-item" href="#">Consulting</a></li>
-          </ul>
-        </span>
-        <span class="nav-item"><a href="#" class="nav-link">Work</a></span>
-        <a href="/" class="px-5 text-dark text-decoration-none">
-          <img class="mx-auto" width="150" src="jumbotron/assets/images/logo-white-dev.png">
-        </a>
-        <span class="nav-item"><a href="#" class="nav-link">About</a></span>
-        <span class="nav-item"><a href="#" class="nav-link">Contact</a></span>
-      </div>
-    </header>
-    <!-- Mobile Menu -->
-    <header class="py-2 pb-md-3 d-md-none d-block">
-      <nav class="px-3 navbar navbar-expand-lg navbar-dark">
-      <a href="/" class="text-dark text-decoration-none">
-        <img class="mr-auto" width="120" src="jumbotron/assets/images/logo-white-dev.png">
-      </a>
-      <button class="text-white navbar-toggler mx-1" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMenu" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span style="font-size: 13px;" class="font-header font-caps text-primary open visible">Menu <i class="bi bi-caret-down-fill"></i>
-        </span>
-        <span style="font-size: 13px;" class="font-header font-caps text-primary close hidden">Close <i class="bi bi-caret-up-fill"></i>
-        </span>
-      </button>
-      <div class="collapse navbar-collapse" id="toggleMenu">
-      <div class="d-flex align-items-center justify-content-center nav bg-light text-dark rounded-3">
-        <span style="font-size: 14px;" class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Offerings
-          </a>
-          <ul style="font-size: 14px;" class="dropdown-menu dropdown-mobile-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Web</a></li>
-            <li><a class="dropdown-item" href="#">Marketing</a></li>
-            <li><a class="dropdown-item" href="#">Consulting</a></li>
-          </ul>
-        </span>
-        <span style="font-size: 14px;" class="nav-item"><a href="#" class="nav-link text-dark">Work</a></span>
-        <span style="font-size: 14px;" class="nav-item"><a href="#" class="nav-link text-dark">About</a></span>
-        <span style="font-size: 14px;" class="nav-item"><a href="#" class="nav-link text-dark">Contact</a></span>
-      </div>
-      </div>
-      </nav>
-    </header>
+    <div class="content">
 
-    <div class="row align-items-center g-lg-5 py-3 mt-4 mx-1 mx-md-5">
-      <div class="col-lg-7 text-start text-white py-4">
-        <h1 class="display-4 fw-bold lh-1 mb-3">Helping you with<br>
-          <span class="txt-rotate" data-period="2000" data-rotate='[ "website design.", "marketing.", "consulting." ]'></span>
-        </h1>
-        <p class="col-lg-10 fs-5">We take a <em>client-focused approach</em> to our design, development, and consulting services when it comes to fulfilling your needs by listening to your goals and project requirements upfront.</p>
-      </div>
-      <div class="col mx-auto col-lg-5">
-        <form class="p-4 p-md-5 rounded-form bg-white card-border-bottom" name="Leads" netlify>
-          <h1 class="text-center mb-3">Ready to get to work?</h1>
-          <div class="row">
-            <div class="col-12 col-md-6">
+      <div class="section-top">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <!-- Desktop Menu -->
+        <header class="px-5 py-2 pb-md-3 text-white d-md-block d-none">
+          <div class="d-flex align-items-center justify-content-center nav">
+            <span class="nav-item dropdown">
+              <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Offerings
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Web</a></li>
+                <li><a class="dropdown-item" href="#">Marketing</a></li>
+                <li><a class="dropdown-item" href="#">Consulting</a></li>
+              </ul>
+            </span>
+            <span class="nav-item"><a href="#" class="nav-link">Work</a></span>
+            <a href="/" class="px-5 text-dark text-decoration-none">
+              <img class="mx-auto" width="150" src="jumbotron/assets/images/logo-white-dev.png">
+            </a>
+            <span class="nav-item"><a href="#" class="nav-link">About</a></span>
+            <span class="nav-item"><a href="#" class="nav-link">Contact</a></span>
+          </div>
+        </header>
+        <!-- Mobile Menu -->
+        <header class="py-2 pb-md-3 d-md-none d-block">
+          <nav class="px-3 navbar navbar-expand-lg navbar-dark">
+            <a href="/" class="text-dark text-decoration-none">
+              <img class="mr-auto" width="120" src="jumbotron/assets/images/logo-white-dev.png">
+            </a>
+            <button class="text-white navbar-toggler mx-1" type="button" data-bs-toggle="collapse"
+              data-bs-target="#toggleMenu" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span style="font-size: 13px;" class="font-header font-caps text-primary open visible">Menu <i
+                  class="bi bi-caret-down-fill"></i>
+              </span>
+              <span style="font-size: 13px;" class="font-header font-caps text-primary close hidden">Close <i
+                  class="bi bi-caret-up-fill"></i>
+              </span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggleMenu">
+              <div class="d-flex align-items-center justify-content-center nav bg-light text-dark rounded-3">
+                <span style="font-size: 14px;" class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Offerings
+                  </a>
+                  <ul style="font-size: 14px;" class="dropdown-menu dropdown-mobile-menu"
+                    aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Web</a></li>
+                    <li><a class="dropdown-item" href="#">Marketing</a></li>
+                    <li><a class="dropdown-item" href="#">Consulting</a></li>
+                  </ul>
+                </span>
+                <span style="font-size: 14px;" class="nav-item"><a href="#" class="nav-link text-dark">Work</a></span>
+                <span style="font-size: 14px;" class="nav-item"><a href="#" class="nav-link text-dark">About</a></span>
+                <span style="font-size: 14px;" class="nav-item"><a href="#"
+                    class="nav-link text-dark">Contact</a></span>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <div class="row align-items-center g-lg-5 py-3 mt-4 mx-1 mx-md-5">
+          <div class="col-lg-7 text-start text-white py-4">
+            <h1 class="display-4 fw-bold lh-1 mb-3">Helping you with<br>
+              <span class="txt-rotate" data-period="2000"
+                data-rotate='[ "website design.", "marketing.", "consulting." ]'></span>
+            </h1>
+            <p class="col-lg-10 fs-5">We take a <em>client-focused approach</em> to our design, development, and
+              consulting services when it comes to fulfilling your needs by listening to your goals and project
+              requirements upfront.</p>
+          </div>
+          <div class="col mx-auto col-lg-5">
+            <form class="p-4 p-md-5 rounded-form bg-white card-border-bottom" name="Leads" netlify>
+              <h1 class="text-center mb-3">Ready to get to work?</h1>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="form-floating mb-3">
+                    <input name="First Name" type="text" class="form-control" id="fName" placeholder="John" required>
+                    <label for="fName">First Name</label>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-floating mb-3">
+                    <input name="Last Name" type="text" class="form-control" id="lName" placeholder="Doe" required>
+                    <label for="lName">Last Name</label>
+                  </div>
+                </div>
+              </div>
               <div class="form-floating mb-3">
-                <input name="First Name" type="text" class="form-control" id="fName" placeholder="John" required>
-                <label for="fName">First Name</label>
+                <input name="Email" type="email" class="form-control" id="emailAddress" placeholder="name@example.com"
+                  required>
+                <label for="emailAddress">Company Email</label>
               </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="form-floating mb-3">
-                <input name="Last Name" type="text" class="form-control" id="lName" placeholder="Doe" required>
-                <label for="lName">Last Name</label>
-              </div>
-            </div>
+              <button class="w-100 btn btn-lg btn-primary" type="submit">Request Info</button>
+            </form>
           </div>
-          <div class="form-floating mb-3">
-            <input name="Email" type="email" class="form-control" id="emailAddress" placeholder="name@example.com" required>
-            <label for="emailAddress">Company Email</label>
-          </div>
-          <button class="w-100 btn btn-lg btn-primary" type="submit">Request Info</button>
-        </form>
+        </div>
+
       </div>
-  </div>
 
-  </div>
-
-  <div class="align-items-md-stretch">
-    <div class="row h-100 g-4 my-4 mx-1 mx-md-5">
-      <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="col text-center">
-        <div class="card card-border-bottom h-100 p-5">
-          <div class="card-body row align-items-center">
-            <h1 class="card-title">SEO &amp; Digital Marketing</h1>
-            <p class="card-text">This content is a little bit longer This content is a little bit longer.</p>
+      <div class="align-items-md-stretch">
+        <div class="row h-100 g-4 my-4 mx-1 mx-md-5">
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="col text-center">
+            <div class="card card-border-bottom h-100 p-5">
+              <div class="card-body row align-items-center">
+                <h1 class="card-title">SEO &amp; Digital Marketing</h1>
+                <p class="card-text">This content is a little bit longer This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="col text-center">
+            <div class="card card-border-bottom h-100 p-5">
+              <div class="card-body row align-items-center">
+                <h1 class="card-title">Brand Strategy &amp; Consulting</h1>
+                <p class="card-text">This content is a little bit longer This content is a little bit longer.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="col text-center">
-        <div class="card card-border-bottom h-100 p-5">
-          <div class="card-body row align-items-center">
-            <h1 class="card-title">Brand Strategy &amp; Consulting</h1>
-            <p class="card-text">This content is a little bit longer This content is a little bit longer.</p>
+
+      <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="row mt-4 mx-1 mx-md-5">
+        <div class="col text-center">
+          <div class="card border-none unround text-center">
+            <div class="px-4 pt-5 text-center">
+              <h1 class="card-title">Website Design &amp; Development</h1>
+              <div class="col-lg-6 mx-auto">
+                <p class="mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s
+                  most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid
+                  system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                  <button type="button" class="btn btn-primary btn-lg px-4">Learn More</button>
+                </div>
+              </div>
+              <div class="carousel slide col col-md-8 mx-auto shadow rounded-3" id="screenshots" data-pause="false"
+                data-interval="1500" data-ride="carousel">
+                <div class="carousel-indicators bg-dark col-3 px-2 col-md-1 mx-auto rounded-3">
+                  <button type="button" data-bs-target="#screenshots" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#screenshots" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#screenshots" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active"
+                    style="background-image: url(/jumbotron/assets/images/screenshot1.png);">
+                    <img class="d-block w-100" src="/jumbotron/assets/images/screenshot1.png">
+                  </div>
+                  <div class="carousel-item" style="background-image: url(/jumbotron/assets/images/screenshot2.png);">
+                    <img class="d-block w-100" src="/jumbotron/assets/images/screenshot2.png">
+                  </div>
+                  <div class="carousel-item" style="background-image: url(/jumbotron/assets/images/screenshot3.png);">
+                    <img class="d-block w-100" src="/jumbotron/assets/images/screenshot3.png">
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <footer class="bg-dark text-white text-center border-footer">
+        <p style="font-size: 0.9rem;" class="py-3">Creating with &#10084; in the USA.<br><em>Copyright Caligo
+            Development, 2021.</em></p>
+      </footer>
     </div>
-  </div>
-
-    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="row mt-4 mx-1 mx-md-5">
-      <div class="col text-center">
-      <div class="card border-none unround text-center">
-        <div class="px-4 pt-5 text-center">
-          <h1 class="card-title">Website Design &amp; Development</h1>
-          <div class="col-lg-6 mx-auto">
-            <p class="mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
-              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-            </div>
-          </div>
-          <div class="carousel slide col col-md-8 mx-auto shadow rounded-3" id="screenshots" data-pause="false" data-interval="1500" data-ride="carousel">
-            <div class="carousel-indicators bg-dark col-4 col-md-2 mx-auto rounded-3">
-              <button type="button" data-bs-target="#screenshots" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#screenshots" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#screenshots" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active" style="background-image: url(/jumbotron/assets/images/screenshot1.png);">
-                <img class="d-block w-100" src="/jumbotron/assets/images/screenshot1.png">
-              </div>
-              <div class="carousel-item" style="background-image: url(/jumbotron/assets/images/screenshot2.png);">
-                <img class="d-block w-100" src="/jumbotron/assets/images/screenshot2.png">
-              </div>
-              <div class="carousel-item" style="background-image: url(/jumbotron/assets/images/screenshot3.png);">
-                <img class="d-block w-100" src="/jumbotron/assets/images/screenshot3.png">
-              </div>
-            </div>
-          </div>
-        </div>
-       </div>
-      </div>  
-    </div>
-
-    <footer class="bg-dark text-white text-center border-footer">
-      <p style="font-size: 0.9rem;" class="py-3">Creating with &#10084; in the USA.<br><em>Copyright Caligo Development, 2021.</em></p>
-    </footer>
-  </div>
-</main>
+  </main>
 
   <script type="text/javascript" src="jumbotron/assets/main.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -207,9 +228,10 @@
     AOS.init();
   </script>
   <script>
-    $( document ).ready(function() {
+    $(document).ready(function () {
       $('.carousel').carousel()
     });
   </script>
-  </body>
+</body>
+
 </html>
