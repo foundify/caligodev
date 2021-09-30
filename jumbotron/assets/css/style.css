@@ -191,10 +191,10 @@ input, label {
     font-family: "Circular Std Bold", sans-serif;
     border-radius: 10px !important;
 }
-::-webkit-input-placeholder { font-family: "Circular Std Bold", sans-serif; } /* Chrome/Opera/Safari */
-::-moz-placeholder { font-family: "Circular Std Bold", sans-serif; } /* firefox 19+ */
-:-ms-input-placeholder { font-family: "Circular Std Bold", sans-serif; } /* ie */
-:-moz-placeholder { font-family: "Circular Std Bold", sans-serif; } /*below firefox 19 */
+::-webkit-input-placeholder { font-family: "Circular Std Bold", sans-serif; }
+::-moz-placeholder { font-family: "Circular Std Bold", sans-serif; }
+:-ms-input-placeholder { font-family: "Circular Std Bold", sans-serif; }
+:-moz-placeholder { font-family: "Circular Std Bold", sans-serif; }
 
 .dropdown-menu {
     left: -20% !important;
