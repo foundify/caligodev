@@ -1,17 +1,21 @@
 html {
-    background-color: #1f242a;
+    background-color: #fff;
 }
 
 
 body {
-    background: #0d204b;
+    background: #fff;
     margin-top: -5px;
     min-height: 100%;
     overflow-x: hidden;
 }
 
 .section-top {
-    background:  linear-gradient(#1f242a, #0d204b);
+    background-image: url("/jumbotron/assets/images/hero-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
 }
 
 body {
@@ -28,25 +32,16 @@ body {
     src: url("../fonts/Circular\ Std\ Bold.ttf");
 }
 @font-face {
-    font-family: "Circular Std Boook";
+    font-family: "Circular Std Book";
     src: url("../fonts/Circular\ Std\ Book.ttf");
-}
-@font-face {
-    font-family: "Space Mono";
-    src: url("../fonts/Space\ Mono.ttf");
-}
-@font-face {
-    font-family: "Space Mono Italic";
-    src: url("../fonts/Space\ Mono\ Italic.ttf");
-}
-
-p em {
-    font-family: "Space Mono Italic", monospace;
-    letter-spacing: -0.75px;
 }
 
 h1, h2, h3, h4, h5, .btn, .nav-item {
     font-family: "Circular Std Bold", sans-serif;
+}
+
+.fs-5 {
+    font-size: 1.15rem !important;
 }
 
 .nav-link {
@@ -61,44 +56,49 @@ h1, h2, h3, h4, h5, .btn, .nav-item {
 }
 
 p {
-    font-family:"Space Mono", monospace;
-    letter-spacing: -0.75px;
+    font-family: 'DM Mono', monospace;
+}
+
+.z-top {
+    position: relative;
+    z-index: 1 !important;
 }
 
 .bg-primary {
-    background-color: #21E6C1 !important;
+    background-image: url("/jumbotron/assets/images/hero-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .btn {
-    border-radius: 10px;
+    border-radius: 8px;
     z-index: 1 !important;
     position: relative;
 }
 
 .btn-lg {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
+}
+.ml-3 {
+    margin-left: 0.75rem;
 }
 
 .btn-primary {
-    background-color: #21E6C1 !important;
+    background-color: #fff !important;
     color: #1f242a !important;
     border: 0px;
 }
-
-.btn-white {
-    background-color: #ffffff !important;
-    color: #1f242a !important;
+.btn-black {
+    background-color: #1f242a !important;
+    color: #fff !important;
     border: 0px;
 }
 
 .btn-secondary {
-    background-color: #1F4287 !important;
-    color: #ffffff !important;
+    background-color: #e2e2e2c2 !important;
+    color: #000 !important;
     border: 0px;
-}
-.btn-outline-secondary {
-    border-color: #1F4287 !important;
-    color: #1F4287 !important;
 }
 .btn-half {
     max-width: 150px;
@@ -109,19 +109,14 @@ p {
 .bg-dark {
     background-color: #1f242a !important;
 }
+.bg-light {
+    background-color: #f1f1f1 !important;
+}
 
 .card {
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
-.card-border-all {
-    border: 15px #21E6C1 solid;
-}
-
-.card-border-bottom {
-    border-radius: 10px;
-    border-bottom: 15px #21E6C1 solid;
-}
 
 .unround {
     border-bottom-left-radius: 0px !important;
@@ -131,14 +126,11 @@ p {
 .border-none {
     border: 0px !important;
 }
-.border-footer {
-    border-top: 15px #21E6C1 solid !important;
-}
 
 #stars {
     width: 3px;
     height: 3px;
-    z-index: -1;
+    z-index: -10;
     background: transparent;
     box-shadow: 1738px 276px #FFF , 1291px 1277px #FFF , 1371px 1138px #FFF , 1552px 1938px #FFF , 1239px 10px #FFF , 1956px 1630px #FFF , 1657px 1177px #FFF , 1264px 514px #FFF , 1001px 604px #FFF , 809px 935px #FFF , 490px 1196px #FFF , 375px 1575px #FFF , 1265px 847px #FFF , 540px 10px #FFF , 99px 1239px #FFF , 316px 1999px #FFF , 615px 83px #FFF , 927px 922px #FFF , 1915px 516px #FFF , 785px 222px #FFF , 780px 326px #FFF , 62px 499px #FFF , 1296px 1923px #FFF , 923px 1334px #FFF , 850px 128px #FFF , 1673px 1621px #FFF , 331px 1171px #FFF , 1431px 1002px #FFF , 26px 1226px #FFF , 1567px 678px #FFF , 252px 171px #FFF , 1695px 806px #FFF , 1382px 1786px #FFF , 658px 332px #FFF , 621px 1846px #FFF , 1685px 1607px #FFF , 1465px 29px #FFF , 396px 1383px #FFF , 1629px 1569px #FFF , 173px 708px #FFF , 1108px 968px #FFF , 1047px 284px #FFF , 104px 809px #FFF , 803px 672px #FFF , 183px 1638px #FFF , 891px 1659px #FFF , 629px 631px #FFF , 347px 371px #FFF , 1383px 816px #FFF , 1632px 879px #FFF , 548px 1569px #FFF , 1738px 364px #FFF , 15px 183px #FFF , 1366px 774px #FFF , 1724px 965px #FFF , 432px 1365px #FFF , 1805px 1355px #FFF , 177px 1510px #FFF , 365px 771px #FFF , 1952px 1082px #FFF , 180px 268px #FFF , 1180px 1436px #FFF , 1809px 1989px #FFF , 1710px 1495px #FFF , 1215px 1322px #FFF , 913px 1240px #FFF , 1976px 1359px #FFF , 1943px 916px #FFF , 1644px 811px #FFF , 469px 1810px #FFF , 932px 51px #FFF , 851px 426px #FFF , 459px 2px #FFF , 1563px 727px #FFF , 1201px 473px #FFF , 1851px 889px #FFF , 968px 1266px #FFF , 1524px 895px #FFF , 1614px 415px #FFF , 1802px 691px #FFF , 1485px 453px #FFF , 95px 438px #FFF , 1734px 305px #FFF , 408px 848px #FFF , 1333px 885px #FFF , 381px 1324px #FFF , 1146px 166px #FFF , 745px 351px #FFF , 729px 1119px #FFF , 1994px 478px #FFF , 1669px 210px #FFF , 1237px 1160px #FFF , 458px 665px #FFF , 738px 568px #FFF , 709px 300px #FFF , 1311px 292px #FFF , 1470px 1907px #FFF , 1529px 786px #FFF , 1825px 1929px #FFF , 789px 1189px #FFF;
     animation: animStar 150s linear infinite;
@@ -189,7 +181,7 @@ p {
 
 input, label {
     font-family: "Circular Std Bold", sans-serif;
-    border-radius: 10px !important;
+    border-radius: 8px !important;
 }
 ::-webkit-input-placeholder { font-family: "Circular Std Bold", sans-serif; }
 ::-moz-placeholder { font-family: "Circular Std Bold", sans-serif; }
@@ -225,7 +217,7 @@ input, label {
   }
 
   .navbar-toggler span {
-      font-family: 'Space Mono', monospace;
+      font-family: 'DM Mono', monospace;
       color: #fff !important;
   }
 
@@ -236,12 +228,12 @@ input, label {
   .carousel {
       position: relative;
       height: 100%;
-      margin-bottom: -10px;
       overflow: hidden !important;
   }
 
   .carousel-inner {
     height: 100%;
+    
   }
   
   .carousel-item {
@@ -256,9 +248,21 @@ input, label {
   }
 
   .rounded-form {
-      border-radius: 10px;
+      border-radius: 15px;
   }
 
   .rounded-3 {
-      border-radius: 10px !important;
+      border-radius: 15px !important;
   }
+
+  .feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #fff;
+    border-radius: .75rem;
+}
