@@ -105,6 +105,17 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
+.btn-gradient {
+    background-image: url("/jumbotron/assets/images/hero-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0px;
+    color: #fff;
+}
+.btn-gradient:hover {
+    color: #fff;
+}
 
 .bg-dark {
     background-color: #1f242a !important;
