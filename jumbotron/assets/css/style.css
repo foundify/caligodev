@@ -64,9 +64,13 @@ h1, h2, h3, h4, h5, .btn, .nav-item {
 .text-light {
     color: #bbb !important;
 }
+.text-right {
+    text-align: right;
+}
 
 p {
-    font-family: 'DM Mono', monospace;
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: 1.05rem;
 }
 
 .z-top {
@@ -79,6 +83,16 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.text-primary {
+    background: url("/jumbotron/assets/images/hero-background.jpg");
+    background-position: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .btn {
@@ -106,7 +120,7 @@ p {
 }
 
 .btn-secondary {
-    background-color: #ffffffc2 !important;
+    background-color: #dfdfdf !important;
     color: #000 !important;
     border: 0px;
 }
@@ -155,11 +169,30 @@ p {
     border-bottom-right-radius: 0px !important;
 }
 
+@media (min-width: 768px) {
+  .mr-md-3 {
+    margin-right: 1rem !important;
+  }
+}
+
+.mr-0 {
+    margin-right: 0rem;
+}
+.ml-0 {
+    margin-left: 0rem;
+}
+
+@media (min-width: 768px) {
+    .ml-md-3 {
+      margin-left: 1rem !important;
+    }
+  }
+
 .ml-3 {
-    margin-left: 1rem!important;
+    margin-left: 1rem;
 }
 .mr-3 {
-    margin-right: 1rem!important;
+    margin-right: 1rem;
 }
 
 .border-none {
