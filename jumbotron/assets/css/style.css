@@ -46,10 +46,16 @@ h1, h2, h3, h4, h5, .btn, .nav-item {
 }
 
 .nav-link {
-    color: #fff;
+    color: #fff !important;
 }
-.nav-link:hover {
-    color: #ddd;
+.nav-item {
+    border-radius: 15px;
+}
+.nav-item:hover {
+    color: #fff !important;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: all 0.25s ease;
 }
 
 .text-dark {
@@ -72,7 +78,7 @@ p {
     background-image: url("/jumbotron/assets/images/hero-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center right;
+    background-position: center;
 }
 
 .btn {
@@ -132,10 +138,28 @@ p {
     border-radius: 15px;
 }
 
+.unround-rounded-3 {
+    border-top-right-radius: 15px !important;
+    border-top-left-radius: 15px !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+.rounded-3-left {
+    border-top-left-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+}
 
 .unround {
     border-bottom-left-radius: 0px !important;
     border-bottom-right-radius: 0px !important;
+}
+
+.ml-3 {
+    margin-left: 1rem!important;
+}
+.mr-3 {
+    margin-right: 1rem!important;
 }
 
 .border-none {
