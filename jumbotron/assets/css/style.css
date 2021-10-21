@@ -29,7 +29,7 @@ body {
 }
 
 @font-face {
-    font-family: "Circular Std Bold";
+    font-family: "Satoshi Bold";
     src: url("../fonts/Circular\ Std\ Bold.ttf");
 }
 @font-face {
@@ -48,6 +48,14 @@ body {
     font-family: "Satoshi Bold";
     src: url("../fonts/Satoshi-Bold.otf");
 }
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../fonts/Proxima\ Nova\ Font.otf");
+}
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
 
 h1, h2, h3, h4, h5 {
     font-family: "Satoshi Black", sans-serif !important;
@@ -58,12 +66,13 @@ h1, h2, h3, h4, h5 {
 }
 
 p {
-    font-family: "Circular Std Book", sans-serif;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 400 !important;
     font-size: 1.05rem;
 }
 
 .fs-5 {
-    font-size: 1.15rem !important;
+    font-size: 1.25rem !important;
 }
 
 .nav-link {
@@ -268,13 +277,13 @@ p {
   }
 
 input, label {
-    font-family: "Circular Std Bold", sans-serif;
+    font-family: "Satoshi Bold", sans-serif;
     border-radius: 8px !important;
 }
-::-webkit-input-placeholder { font-family: "Circular Std Bold", sans-serif; }
-::-moz-placeholder { font-family: "Circular Std Bold", sans-serif; }
-:-ms-input-placeholder { font-family: "Circular Std Bold", sans-serif; }
-:-moz-placeholder { font-family: "Circular Std Bold", sans-serif; }
+::-webkit-input-placeholder { font-family: "Satoshi Bold", sans-serif; }
+::-moz-placeholder { font-family: "Satoshi Bold", sans-serif; }
+:-ms-input-placeholder { font-family: "Satoshi Bold", sans-serif; }
+:-moz-placeholder { font-family: "Satoshi Bold", sans-serif; }
 
 .dropdown-menu {
     left: -20% !important;
