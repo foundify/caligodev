@@ -40,13 +40,26 @@ body {
     font-family: "Circular Std Black";
     src: url("../fonts/Circular\ Std\ Black.ttf");
 }
+@font-face {
+    font-family: "Satoshi Black";
+    src: url("../fonts/Satoshi-Black.otf");
+}
+@font-face {
+    font-family: "Satoshi Bold";
+    src: url("../fonts/Satoshi-Bold.otf");
+}
 
 h1, h2, h3, h4, h5 {
-    font-family: "Circular Std Black", sans-serif !important;
+    font-family: "Satoshi Black", sans-serif !important;
 }
 
 .btn, .nav-item {
-    font-family: "Circular Std Bold", sans-serif;
+    font-family: "Satoshi Black", sans-serif !important;
+}
+
+p {
+    font-family: "Circular Std Book", sans-serif;
+    font-size: 1.05rem;
 }
 
 .fs-5 {
@@ -74,11 +87,6 @@ h1, h2, h3, h4, h5 {
 }
 .text-right {
     text-align: right;
-}
-
-p {
-    font-family: 'Circular Std Book', sans-serif;
-    font-size: 1.05rem;
 }
 
 .z-top {
