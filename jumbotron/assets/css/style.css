@@ -36,8 +36,16 @@ body {
     font-family: "Circular Std Book";
     src: url("../fonts/Circular\ Std\ Book.ttf");
 }
+@font-face {
+    font-family: "Circular Std Black";
+    src: url("../fonts/Circular\ Std\ Black.ttf");
+}
 
-h1, h2, h3, h4, h5, .btn, .nav-item {
+h1, h2, h3, h4, h5 {
+    font-family: "Circular Std Black", sans-serif !important;
+}
+
+.btn, .nav-item {
     font-family: "Circular Std Bold", sans-serif;
 }
 
