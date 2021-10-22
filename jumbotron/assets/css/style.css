@@ -29,18 +29,6 @@ body {
 }
 
 @font-face {
-    font-family: "Satoshi Bold";
-    src: url("../fonts/Circular\ Std\ Bold.ttf");
-}
-@font-face {
-    font-family: "Circular Std Book";
-    src: url("../fonts/Circular\ Std\ Book.ttf");
-}
-@font-face {
-    font-family: "Circular Std Black";
-    src: url("../fonts/Circular\ Std\ Black.ttf");
-}
-@font-face {
     font-family: "Satoshi Black";
     src: url("../fonts/Satoshi-Black.otf");
 }
@@ -50,18 +38,25 @@ body {
 }
 @font-face {
     font-family: "Proxima Nova";
-    src: url("../fonts/Proxima\ Nova\ Font.otf");
+    src: url("../fonts/Proxima\ Nova.otf");
 }
 @font-face {
-    font-family: "Inter";
-    src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf");
+    font-family: "Proxima Nova Bold";
+    src: url("../fonts/Proxima\ Nova\ Bold.ttf");
+}
+@font-face {
+    font-family: "Proxima Nova Extrabold";
+    src: url("../fonts/Proxima\ Nova\ Extrabold.ttf");
 }
 
 h1, h2, h3, h4, h5 {
     font-family: "Satoshi Black", sans-serif !important;
 }
 
-.btn, .nav-item {
+.btn {
+    font-family: "Proxima Nova Extrabold", sans-serif !important;
+}
+.nav-item {
     font-family: "Satoshi Black", sans-serif !important;
 }
 
