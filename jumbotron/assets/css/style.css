@@ -54,7 +54,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .btn {
-    font-family: "Proxima Nova Extrabold", sans-serif !important;
+    font-family: "Satoshi Bold", sans-serif !important;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
 }
 .nav-item {
     font-family: "Satoshi Black", sans-serif !important;
@@ -122,7 +124,11 @@ p {
 }
 
 .btn-lg {
-    font-size: 1.15rem;
+    font-size: 0.95rem;
+}
+.btn-md {
+    font-size: 0.85rem !important;
+    padding: 0.55rem 0.7rem 0.55rem 0.7rem;
 }
 .ml-3 {
     margin-left: 0.75rem;
@@ -309,8 +315,11 @@ input, label {
   }
 
   .navbar-toggler span {
-      font-family: 'DM Mono', monospace;
+      font-family: "Satoshi Bold", sans-serif !important;
+      text-transform: uppercase;
+      font-size: 0.8rem !important;
       color: #fff !important;
+      letter-spacing: 0.05rem;
   }
 
   .navbar-dark .navbar-toggler {
@@ -343,6 +352,10 @@ input, label {
       border-radius: 15px;
   }
 
+  .mobile-nav {
+      border-radius: 8px !important;
+  }
+
   .rounded-3 {
       border-radius: 15px !important;
   }
@@ -356,5 +369,5 @@ input, label {
     margin-bottom: 1rem;
     font-size: 2rem;
     color: #fff;
-    border-radius: .75rem;
+    border-radius: 15px;
 }
