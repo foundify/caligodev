@@ -67,6 +67,9 @@ p {
     font-weight: 400 !important;
     font-size: 1.05rem;
 }
+.form-header {
+    font-family: "Satoshi Black", sans-serif !important;
+}
 
 .fs-5 {
     font-size: 1.25rem !important;
@@ -139,6 +142,14 @@ p {
     color: #1f242a !important;
     border: 0px;
 }
+.btn-gradient {
+    background: url("/jumbotron/assets/images/hero-background.jpg");
+    background-position: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff !important;
+    border: 0px;
+}
 .btn-black {
     background-color: #181818 !important;
     color: #fff !important;
@@ -150,6 +161,15 @@ p {
     color: #000 !important;
     border: 0px;
 }
+.btn-outline-secondary {
+    color: #000 !important;
+    border: 1px solid #dfdfdf !important;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+    background-color: #dfdfdf !important;
+}
+
 .btn-half {
     max-width: 150px;
     margin-left: auto;
