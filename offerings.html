@@ -330,33 +330,38 @@
                         <div class="container px-1 py-1 py-md-5">
                             <div class="row py-4">
                                 <div class="col-11 col-md-8 mx-auto">
-                                    <form class="p-4 p-md-5 mb-0 rounded-form bg-white" name="Leads" netlify>
+                                    <form class="p-4 p-md-5 mb-0 rounded-form bg-white requires-validation" name="Leads" netlify novalidate>
                                         <h1 class="text-center mb-3">Well, what are you waiting for?</h1>
                                         <div class="row">
                                             <div class="col-12 col-md-4">
                                                 <div class="form-floating mb-3">
                                                     <input name="First Name" type="text" class="form-control" id="fName"
                                                         placeholder="John" required>
-                                                    <label for="fName">First Name</label>
+                                                    <label for="fName" class="text-muted">First Name</label>
+                                                    <div class="valid-feedback">Looks good!</div>
+                                                    <div class="invalid-feedback">Please enter your first name.</div>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-md-4">
                                                 <div class="form-floating mb-3">
                                                     <input name="Last Name" type="text" class="form-control" id="lName"
                                                         placeholder="Doe" required>
-                                                    <label for="lName">Last Name</label>
+                                                    <label for="lName" class="text-muted">Last Name</label>
+                                                    <div class="valid-feedback">Looks good!</div>
+                                                    <div class="invalid-feedback">Please enter your last name.</div>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-md-4">
                                                 <div class="form-floating mb-3">
                                                     <input name="Email" type="email" class="form-control"
                                                         id="emailAddress" placeholder="name@example.com" required>
-                                                    <label for="emailAddress">Company Email</label>
+                                                    <label for="emailAddress" class="text-muted">Company Email</label>
+                                                    <div class="valid-feedback">Looks good!</div>
+                                                    <div class="invalid-feedback">Please enter a valid email address.</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <button class="w-100 btn btn-lg btn-black py-2" type="submit">Get in
-                                            Touch</button>
+                                        <button class="w-100 btn btn-lg btn-black py-3" type="submit">Get in Touch</button>
                                     </form>
                                 </div>
                             </div>
