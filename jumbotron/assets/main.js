@@ -84,3 +84,15 @@ $("#step2back").on("click", function() {
 $('#startProject').on('hide.bs.collapse', function() {
   return false;
 });
+
+document.getElementById("industry").selectedIndex = -1;
+
+$(function(){
+  $('input[type="url"]').on('blur', function(){
+    var string = $(this).val();
+    if (!string.match(/^https?:/) && string.length) {
+      string = "http://" + string;
+       $(this).val(string)
+    }
+  });
+});

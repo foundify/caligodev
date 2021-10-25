@@ -37,6 +37,10 @@ body {
     src: url("../fonts/Satoshi-Bold.otf");
 }
 @font-face {
+    font-family: "Satoshi Medium";
+    src: url("../fonts/Satoshi-Medium.otf");
+}
+@font-face {
     font-family: "Proxima Nova";
     src: url("../fonts/Proxima\ Nova.otf");
 }
@@ -49,8 +53,12 @@ body {
     src: url("../fonts/Proxima\ Nova\ Extrabold.ttf");
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, .form-header {
     font-family: "Satoshi Black", sans-serif !important;
+}
+
+.font-satoshi {
+    font-family: "Satoshi Regular", sans-serif !important;
 }
 
 .btn {
@@ -63,17 +71,19 @@ h1, h2, h3, h4, h5 {
 }
 
 p {
-    font-family: "Proxima Nova", sans-serif;
-    font-weight: 400 !important;
-    font-size: 1.05rem;
-}
-.form-header {
-    font-family: "Satoshi Black", sans-serif !important;
+    font-family: "Satoshi Medium", sans-serif;
+    font-size: 1rem;
 }
 
 .fs-5 {
     font-size: 1.25rem !important;
 }
+
+.btn, button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+ }
+
 .accordion-button {
     font-size: 1.25rem;
     padding: 1rem 0rem;
@@ -84,7 +94,7 @@ p {
 .accordion-button:not(.collapsed) {
     color: inherit;
     background-color: #fff;
-    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%) !important;
 }
 .accordion-button:not(.collapsed)::after {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
@@ -177,6 +187,9 @@ p {
     color: #000 !important;
     border: 0px;
 }
+.btn-project {
+    color: #000 !important;
+}
 .btn-outline-secondary {
     color: #000 !important;
     border: 1px solid #dfdfdf !important;
@@ -187,7 +200,10 @@ p {
     background-color: #dfdfdf !important;
     transition: background-color ease-in-out 0.15s;
 }
-.collapsed, .text-muted {
+.collapsed {
+    color: #929292;
+}
+.text-muted {
     color: #929292 !important;
 }
 .custom-checkbox {
@@ -342,7 +358,7 @@ p {
     }
   }
 
-input, label {
+input, label, select {
     font-family: "Satoshi Bold", sans-serif;
     border-radius: 8px !important;
 }

@@ -114,13 +114,14 @@
                             <div class="row p-3">
                                 <div class="col-12 col-lg-5 mb-5 mb-lg-0">
                                     <h1>Let's get started.</h1>
-                                    <p class="text-muted my-3 col-md-9 col-12 fs-5">Help us get a better understanding of your project needs a bit better. We'll be in touch shortly after hearing from you.</p>
-                                    <div class="text-center btn btn-md btn-secondary" data-bs-toggle="collapse" data-bs-target="#step1content" aria-expanded="false" aria-controls="step1content">Start Your Project</div>
+                                    <p class="text-muted my-3 col-md-9 col-12 fs-5">Help us get a better understanding of your project needs. We'll be in touch shortly after hearing from you.</p>
+                                    <div class="text-center btn-project btn btn-md btn-secondary" data-bs-toggle="collapse" data-bs-target="#step1content" aria-expanded="false" aria-controls="step1content">Start Your Project</div>
                                 </div>
                                 <div class="col-12 col-md">
                                         <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                                             <div>
                                                 <form class="p-4 p-md-5 rounded-form bg-white" name="Quote" netlify>
+                                                    <p class="text-primary mb-0">Asterik (*) indicates required field.</p>
                                                     <div class="accordion accordion-flush" id="accordionFlushExample">
                                                         <!--Contact Information-->
                                                         <div class="accordion-item">
@@ -135,20 +136,20 @@
                                                                     <div class="col-12 col-md-6">
                                                                         <div class="form-floating mb-3">
                                                                             <input name="First Name" type="text" class="form-control" id="fName" placeholder="John" required>
-                                                                            <label for="fName" class="text-muted">First Name</label>
+                                                                            <label for="fName" class="text-muted">First Name*</label>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-12 col-md-6">
                                                                         <div class="form-floating mb-3">
                                                                             <input name="Last Name" type="text" class="form-control" id="lName" placeholder="Doe" required>
-                                                                            <label for="lName" class="text-muted">Last Name</label>
+                                                                            <label for="lName" class="text-muted">Last Name*</label>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-12 col-md">
                                                                         <div class="form-floating mb-3">
                                                                             <input name="Email" type="email" class="form-control" id="emailAddress"
                                                                             placeholder="name@example.com" required>
-                                                                            <label for="emailAddress" class="text-muted">Company Email</label>
+                                                                            <label for="emailAddress" class="text-muted">Email Address*</label>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -169,21 +170,27 @@
                                                           <div id="step2content" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                                             <div class="accordion-body">
                                                                 <div class="row">
-                                                                    <div class="col-12">
-                                                                        <label class="text-muted mb-2">Select the services you need.</label><br>
-                                                                        <div class="mb-3">
-                                                                            <label class="custom-checkbox">
-                                                                                <input type="checkbox">
-                                                                                <div class="checkbox-wrapper" name="Website Redesign">
-                                                                                    <span class="check-text">Website Redesign</span>
-                                                                                </div>
-                                                                            </label>
-                                                                            <label class="custom-checkbox">
-                                                                                <input type="checkbox">
-                                                                                <div class="checkbox-wrapper" name="Website Redesign">
-                                                                                    <span class="check-text">Website Redesign</span>
-                                                                                </div>
-                                                                            </label>
+                                                                    <div class="col-12 col-md-12">
+                                                                        <div class="form-floating mb-3">
+                                                                            <input name="Existing Website" type="url" class="form-control" id="exisitingWebsite" placeholder="John">
+                                                                            <label for="exisitingWebsite" class="text-muted">Existing Website</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-md-6">
+                                                                        <div class="form-floating">
+                                                                            <select class="form-select" id="industry" name="Industry">
+                                                                              <option value="1">One</option>
+                                                                              <option value="2">Two</option>
+                                                                              <option value="3">Three</option>
+                                                                            </select>
+                                                                            <label for="industry" class="text-muted">Select Your Industry</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-md-6">
+                                                                        <div class="form-floating mb-3">
+                                                                            <input name="Competitors" type="text" class="form-control" id="competitors"
+                                                                            placeholder="Apple, Slack, Salesforce, etc">
+                                                                            <label for="competitors" class="text-muted">Primary Competitors</label>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -208,18 +215,66 @@
                                                             <div class="accordion-body">
                                                                 <div class="row">
                                                                     <div class="col-12">
-                                                                        <label class="text-muted mb-2">Select the services you need.</label><br>
-                                                                        <div class="mb-3">
-                                                                            <label class="custom-checkbox">
+                                                                        <label class="text-muted mb-2">Select the services you're interested in.</label><br>
+                                                                        <div class="text-center mb-3">
+                                                                            <label class="custom-checkbox m-1">
                                                                                 <input type="checkbox">
                                                                                 <div class="checkbox-wrapper" name="Website Redesign">
                                                                                     <span class="check-text">Website Redesign</span>
                                                                                 </div>
                                                                             </label>
-                                                                            <label class="custom-checkbox">
+                                                                            <label class="custom-checkbox m-1">
                                                                                 <input type="checkbox">
                                                                                 <div class="checkbox-wrapper" name="Website Redesign">
-                                                                                    <span class="check-text">Website Redesign</span>
+                                                                                    <span class="check-text">General Website Design</span>
+                                                                                </div>
+                                                                            </label>
+                                                                            <label class="custom-checkbox m-1">
+                                                                                <input type="checkbox">
+                                                                                <div class="checkbox-wrapper" name="Website Redesign">
+                                                                                    <span class="check-text">eCommerce Website Development</span>
+                                                                                </div>
+                                                                            </label>
+                                                                            <label class="custom-checkbox m-1">
+                                                                                <input type="checkbox">
+                                                                                <div class="checkbox-wrapper" name="Website Redesign">
+                                                                                    <span class="check-text">eCommerce Management</span>
+                                                                                </div>
+                                                                            </label>
+                                                                            <label class="custom-checkbox m-1">
+                                                                                <input type="checkbox">
+                                                                                <div class="checkbox-wrapper" name="Website Redesign">
+                                                                                    <span class="check-text">Social Media Marketing</span>
+                                                                                </div>
+                                                                            </label>
+                                                                            <label class="custom-checkbox m-1">
+                                                                                <input type="checkbox">
+                                                                                <div class="checkbox-wrapper" name="Website Redesign">
+                                                                                    <span class="check-text">Email Marketing</span>
+                                                                                </div>
+                                                                            </label>
+                                                                            <label class="custom-checkbox m-1">
+                                                                                <input type="checkbox">
+                                                                                <div class="checkbox-wrapper" name="Website Redesign">
+                                                                                    <span class="check-text">Search Engine Optimization</span>
+                                                                                </div>
+                                                                            </label>
+                                                                            <label class="custom-checkbox m-1">
+                                                                                <input type="checkbox">
+                                                                                <div class="checkbox-wrapper" name="Website Redesign">
+                                                                                    <span class="check-text">Marketing Collateral Design</span>
+                                                                                </div>
+                                                                            </label>
+                                                                            <label class="custom-checkbox m-1">
+                                                                                <input type="checkbox">
+                                                                                <div class="checkbox-wrapper" name="Website Redesign">
+                                                                                    <span class="check-text">General Business Consulting</span>
+                                                                                </div>
+                                                                            </label>
+                                                                            <label class="custom-checkbox m-1">
+                                                                                <input type="checkbox">
+                                                                                <div class="checkbox-wrapper" name="Website Redesign">
+                                                                                    <span class="check-text">eCommerce Business Consulting</span>
                                                                                 </div>
                                                                             </label>
                                                                         </div>
@@ -237,7 +292,6 @@
                                                           </div>
                                                         </div>
                                                       </div>
-                                                    
                                                 </form>
                                             </div>
                                         </div>
