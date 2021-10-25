@@ -86,6 +86,7 @@ $('#startProject').on('hide.bs.collapse', function() {
 });
 
 document.getElementById("industry").selectedIndex = -1;
+document.getElementById("budget").selectedIndex = -1;
 
 $(function(){
   $('input[type="url"]').on('blur', function(){
