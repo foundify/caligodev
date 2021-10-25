@@ -63,3 +63,24 @@ $(document).ready(function () {
       $(".close").toggleClass("hidden");
   });
 });
+
+$("#step1btn").on("click", function() {
+  $("#step2content").collapse('show');
+  $("#step1content").collapse('hide');
+});
+$("#step1back").on("click", function() {
+  $("#step2content").collapse('hide');
+  $("#step1content").collapse('show');
+});
+$("#step2btn").on("click", function() {
+  $("#step3content").collapse('show');
+  $("#step2content").collapse('hide');
+});
+$("#step2back").on("click", function() {
+  $("#step3content").collapse('hide');
+  $("#step2content").collapse('show');
+});
+
+$('#startProject').on('hide.bs.collapse', function() {
+  return false;
+});

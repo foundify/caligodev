@@ -112,51 +112,132 @@
                     <div class="row h-100 mx-1 mx-md-5">
                         <div class="container px-2 px-md-4 py-4 py-md-5">
                             <div class="row p-3">
-                                <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+                                <div class="col-12 col-lg-5 mb-5 mb-lg-0">
                                     <h1>Let's get started.</h1>
-                                    <p class="text-muted my-3 col-md-9 col-12">Contact forms can be scary, especially when you've got a lot to say. We don't need to know every minor detail right now, but an overview of what you have in mind will certainly help us understand your needs a bit better.</p>
+                                    <p class="text-muted my-3 col-md-9 col-12 fs-5">Help us get a better understanding of your project needs a bit better. We'll be in touch shortly after hearing from you.</p>
+                                    <div class="text-center btn btn-md btn-secondary" data-bs-toggle="collapse" data-bs-target="#step1content" aria-expanded="false" aria-controls="step1content">Start Your Project</div>
                                 </div>
                                 <div class="col-12 col-md">
                                         <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                                             <div>
-                                                <form class="p-4 p-md-5 mb-0 rounded-form unround bg-white" name="Quote" netlify>
-                                                    <div class="row">
-                                                        <h5 class="form-header mb-3">Tell us about yourself.</h5>
-                                                        <div class="col-12 col-md-6">
-                                                            <div class="form-floating mb-3">
-                                                                <input name="First Name" type="text" class="form-control" id="fName" placeholder="John" required>
-                                                                <label for="fName" class="text-muted">First Name</label>
+                                                <form class="p-4 p-md-5 rounded-form bg-white" name="Quote" netlify>
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                        <!--Contact Information-->
+                                                        <div class="accordion-item">
+                                                          <h2 class="accordion-header" id="step1">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step1content" aria-expanded="false" aria-controls="step1content">
+                                                              What's the best way to contact you?
+                                                            </button>
+                                                          </h2>
+                                                          <div id="step1content" class="accordion-collapse collapse" aria-labelledby="step1" data-bs-parent="#accordionFlushExample">
+                                                            <div class="accordion-body">
+                                                                <div class="row">
+                                                                    <div class="col-12 col-md-6">
+                                                                        <div class="form-floating mb-3">
+                                                                            <input name="First Name" type="text" class="form-control" id="fName" placeholder="John" required>
+                                                                            <label for="fName" class="text-muted">First Name</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-md-6">
+                                                                        <div class="form-floating mb-3">
+                                                                            <input name="Last Name" type="text" class="form-control" id="lName" placeholder="Doe" required>
+                                                                            <label for="lName" class="text-muted">Last Name</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-md">
+                                                                        <div class="form-floating mb-3">
+                                                                            <input name="Email" type="email" class="form-control" id="emailAddress"
+                                                                            placeholder="name@example.com" required>
+                                                                            <label for="emailAddress" class="text-muted">Company Email</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex">
+                                                                    <div class="ms-auto">
+                                                                        <div class="btn btn-secondary btn-md" id="step1btn">Next</div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
+                                                          </div>
                                                         </div>
-                                                        <div class="col-12 col-md-6">
-                                                            <div class="form-floating mb-3">
-                                                                <input name="Last Name" type="text" class="form-control" id="lName" placeholder="Doe" required>
-                                                                <label for="lName" class="text-muted">Last Name</label>
+                                                        <div class="accordion-item">
+                                                          <h2 class="accordion-header" id="step2">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step2content" aria-expanded="false" aria-controls="step2content">
+                                                              Tell us about your brand.
+                                                            </button>
+                                                          </h2>
+                                                          <div id="step2content" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                            <div class="accordion-body">
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <label class="text-muted mb-2">Select the services you need.</label><br>
+                                                                        <div class="mb-3">
+                                                                            <label class="custom-checkbox">
+                                                                                <input type="checkbox">
+                                                                                <div class="checkbox-wrapper" name="Website Redesign">
+                                                                                    <span class="check-text">Website Redesign</span>
+                                                                                </div>
+                                                                            </label>
+                                                                            <label class="custom-checkbox">
+                                                                                <input type="checkbox">
+                                                                                <div class="checkbox-wrapper" name="Website Redesign">
+                                                                                    <span class="check-text">Website Redesign</span>
+                                                                                </div>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex">
+                                                                    <div class="me-auto">
+                                                                        <div class="btn btn-outline-secondary btn-md" id="step1back">Back</div>
+                                                                    </div>
+                                                                    <div class="ms-auto">
+                                                                        <div class="btn btn-secondary btn-md" id="step2btn">Next</div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
+                                                          </div>
                                                         </div>
-                                                        <div class="col-12 col-md">
-                                                            <div class="form-floating mb-3">
-                                                                <input name="Email" type="email" class="form-control" id="emailAddress"
-                                                                placeholder="name@example.com" required>
-                                                                <label for="emailAddress" class="text-muted">Company Email</label>
+                                                        <div class="accordion-item">
+                                                          <h2 class="accordion-header" id="step3">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step3content" aria-expanded="false" aria-controls="step3content">
+                                                              How can we help?
+                                                            </button>
+                                                          </h2>
+                                                          <div id="step3content" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                            <div class="accordion-body">
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <label class="text-muted mb-2">Select the services you need.</label><br>
+                                                                        <div class="mb-3">
+                                                                            <label class="custom-checkbox">
+                                                                                <input type="checkbox">
+                                                                                <div class="checkbox-wrapper" name="Website Redesign">
+                                                                                    <span class="check-text">Website Redesign</span>
+                                                                                </div>
+                                                                            </label>
+                                                                            <label class="custom-checkbox">
+                                                                                <input type="checkbox">
+                                                                                <div class="checkbox-wrapper" name="Website Redesign">
+                                                                                    <span class="check-text">Website Redesign</span>
+                                                                                </div>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex">
+                                                                    <div class="me-auto">
+                                                                        <div class="btn btn-outline-secondary btn-md" id="step2back">Back</div>
+                                                                    </div>
+                                                                    <div class="ms-auto">
+                                                                        <button class="btn btn-md btn-black" type="submit">Submit Request</button>
+                                                                    </div>
+                                                                </div>
                                                             </div>
+                                                          </div>
                                                         </div>
-                                                        <h5 class="form-header my-3">How can we help?</h5>
-                                                        <div class="col-12">
-                                                            <label class="text-muted mb-2">Select the services you need.</label>
-                                                            <div class="btn-group custom-checkbox d-flex mb-3" role="group" aria-label="Basic checkbox toggle button group">
-                                                                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                                                                <label class="btn btn-outline-secondary mr-2" for="btncheck1">Checkbox 1</label>
-                                                              
-                                                                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                                                                <label class="btn btn-outline-primary mx-2" for="btncheck2">Checkbox 2</label>
-                                                              
-                                                                <input type="checkbox" class="btn-check custom-control-input" id="btncheck3" autocomplete="off">
-                                                                <label class="btn btn-outline-primary custom-control-label ml-2" for="btncheck3">Checkbox 3</label>
-                                                              </div>
-                                                        </div>
-                                                    </div>
-                                                    <button class="w-100 btn btn-lg btn-black py-3" type="submit">Get in Touch</button>
+                                                      </div>
+                                                    
                                                 </form>
                                             </div>
                                         </div>
@@ -168,7 +249,7 @@
                 </div>
             </div>
 
-            <div class="text-center bg-dark rounded-3 my-3 z-top" data-aos="fade-up" data-aos-duration="1000"
+            <div class="text-center bg-dark rounded-3 my-3 mx-3 z-top" data-aos="fade-up" data-aos-duration="1000"
                 data-aos-delay="100">
                 <div class="align-items-md-stretch">
                     <div class="row h-100 mx-1 mx-md-5">
