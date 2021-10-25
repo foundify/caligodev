@@ -97,3 +97,10 @@ $(function(){
     }
   });
 });
+
+$(function () {
+  $('.requires-validation').find('input,select,textarea').on('focusout', function () {
+      $(this).removeClass('is-valid is-invalid')
+             .addClass(this.checkValidity() ? 'is-valid' : 'is-invalid');
+  });
+});
