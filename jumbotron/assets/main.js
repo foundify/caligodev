@@ -1,3 +1,26 @@
+(function () {
+  'use strict'
+  const forms = document.querySelectorAll('.requires-validation')
+  Array.from(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+      }
+    
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
+  
+  $(function () {
+    $('.requires-validation').find('input,select,textarea').on('focusout', function () {
+        $(this).removeClass('is-valid is-invalid')
+               .addClass(this.checkValidity() ? 'is-valid' : 'is-invalid');
+    });
+  });
+
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -95,28 +118,5 @@ $(function(){
       string = "http://" + string;
        $(this).val(string)
     }
-  });
-});
-
-(function () {
-'use strict'
-const forms = document.querySelectorAll('.requires-validation')
-Array.from(forms)
-  .forEach(function (form) {
-    form.addEventListener('submit', function (event) {
-    if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-    }
-  
-      form.classList.add('was-validated')
-    }, false)
-  })
-})()
-
-$(function () {
-  $('.requires-validation').find('input,select,textarea').on('focusout', function () {
-      $(this).removeClass('is-valid is-invalid')
-             .addClass(this.checkValidity() ? 'is-valid' : 'is-invalid');
   });
 });
