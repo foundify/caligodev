@@ -98,6 +98,20 @@ $(function(){
   });
 });
 
+(function () {
+'use strict'
+const forms = document.querySelectorAll('.requires-validation')
+Array.from(forms)
+  .forEach(function (form) {
+    form.addEventListener('submit', function (event) {
+    if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+    }
+    })
+  })
+})()
+
 $(function () {
   $('.requires-validation').find('input,select,textarea').on('focusout', function () {
       $(this).removeClass('is-valid is-invalid')
