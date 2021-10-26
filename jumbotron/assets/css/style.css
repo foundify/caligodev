@@ -458,3 +458,9 @@ input, label, select, textarea {
     color: #fff;
     border-radius: 15px;
 }
+
+.form-control.is-valid, .was-validated .form-control:valid {
+    border-color: #ced4da;
+    padding-right: none;
+    background-image: none;
+}
