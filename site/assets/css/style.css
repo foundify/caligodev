@@ -24,7 +24,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: calc(100vh - 32px);
+    min-height: calc(100vh - 32px);
 }
 
 .h-100-form {
@@ -313,6 +313,13 @@ input[type="radio"]:checked + .btn-outline-checkbox  {
 .unround {
     border-bottom-left-radius: 0px !important;
     border-bottom-right-radius: 0px !important;
+}
+
+@media (max-width: 1199px) {
+    .unround-xl {
+        border-bottom-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+    }
 }
 
 @media (min-width: 992px) {
