@@ -12,11 +12,23 @@ body {
 }
 
 .section-top {
-    background-image: url("/jumbotron/assets/images/hero-background.jpg");
+    background-image: url("/site/assets/images/hero-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center right;
     height: 100%;
+}
+
+.section-top-landing {
+    background-image: url("/site/assets/images/hero-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 32px);
+}
+
+.h-100-form {
+    height: calc(100vh - 132px) !important;
 }
 
 body {
@@ -62,7 +74,8 @@ h1, h2, h3, h4, h5, .form-header {
 }
 
 .btn {
-    font-family: "Satoshi Bold", sans-serif !important;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
 }
@@ -71,8 +84,8 @@ h1, h2, h3, h4, h5, .form-header {
 }
 
 p {
-    font-family: "Satoshi Medium", sans-serif;
-    font-size: 1rem;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.08rem;
 }
 
 .fs-5 {
@@ -136,14 +149,14 @@ input:focus, select:focus, textarea:focus {
 }
 
 .bg-primary {
-    background-image: url("/jumbotron/assets/images/hero-background.jpg");
+    background-image: url("/site/assets/images/hero-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .text-primary {
-    background: url("/jumbotron/assets/images/hero-background.jpg");
+    background: url("/site/assets/images/hero-background.jpg");
     background-position: no-repeat;
     background-size: cover;
     background-position: center;
@@ -175,7 +188,7 @@ input:focus, select:focus, textarea:focus {
     border: 0px;
 }
 .btn-gradient {
-    background: url("/jumbotron/assets/images/hero-background.jpg");
+    background: url("/site/assets/images/hero-background.jpg");
     background-position: no-repeat;
     background-size: cover;
     background-position: center;
@@ -237,13 +250,33 @@ input:focus, select:focus, textarea:focus {
     color: #000;
 }
 
+.btn-outline-checkbox {
+    font-family: "Satoshi Bold",sans-serif;
+    border-radius: 8px!important;
+    text-transform: none;
+    letter-spacing: 0;
+    border: 1px solid;
+    display: inline-flex;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    border-radius: 8px;
+    border-color: #dfdfdf;
+    color: #000;
+    cursor: pointer;
+    transition: background-color ease-in-out 0.15s;
+}
+
+input[type="radio"]:checked + .btn-outline-checkbox  {
+    background-color: #dfdfdf !important;
+    color: #000 !important;
+}
+
 .btn-half {
     max-width: 150px;
     margin-left: auto;
     margin-right: auto;
 }
 .btn-gradient {
-    background-image: url("/jumbotron/assets/images/hero-background.jpg");
+    background-image: url("/site/assets/images/hero-background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -365,13 +398,14 @@ input:focus, select:focus, textarea:focus {
   }
 
 input, label, select, textarea {
-    font-family: "Satoshi Bold", sans-serif;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
     border-radius: 8px !important;
 }
-::-webkit-input-placeholder { font-family: "Satoshi Bold", sans-serif; }
-::-moz-placeholder { font-family: "Satoshi Bold", sans-serif; }
-:-ms-input-placeholder { font-family: "Satoshi Bold", sans-serif; }
-:-moz-placeholder { font-family: "Satoshi Bold", sans-serif; }
+::-webkit-input-placeholder { font-family: "Outfit", sans-serif;  }
+::-moz-placeholder { font-family: "Outfit", sans-serif; }
+:-ms-input-placeholder { font-family: "Outfit", sans-serif; }
+:-moz-placeholder { font-family: "Outfit", sans-serif; }
 
 .dropdown-menu {
     left: -20% !important;
