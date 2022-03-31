@@ -25,10 +25,15 @@ body {
     background-size: cover;
     background-position: center center;
     min-height: calc(100vh - 32px);
+    height: 100%;
 }
 
 .h-100-form {
-    height: calc(100vh - 132px) !important;
+    height: calc(100vh - 100px) !important;
+}
+
+.w-100-min-3 {
+    width: calc(100vw - 32px) !important;
 }
 
 body {
