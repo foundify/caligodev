@@ -1,4 +1,4 @@
-function redirectSubmit() {
+$('#landingSubmit').click(function() {
     var value = $('input[name=option]:checked').val();
     if (value == 'Basic') {
       console.log(value);
@@ -8,4 +8,4 @@ function redirectSubmit() {
       console.log(value);
       window.open('https://square.link/u/k59DiHnv','_blank');
     }
-  };
+  });
