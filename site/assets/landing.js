@@ -1,4 +1,4 @@
-$('#landingSubmit').click(function() {
+$('#landingSubmit').submit(function() {
     var value = $('input[name=option]:checked').val();
     if (value == 'Basic') {
       console.log(value);
