@@ -296,7 +296,12 @@ input[type="radio"]:checked + .btn-outline-checkbox  {
 .btn-gradient:hover {
     color: #fff;
 }
-
+.text-dark {
+    color: #181818 !important;
+}
+.shadow-light {
+    box-shadow: 0 .5rem 1rem rgba(255,255,255,.15)!important;
+}
 .bg-dark {
     background-color: #181818 !important;
 }
