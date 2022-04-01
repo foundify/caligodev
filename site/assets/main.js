@@ -143,3 +143,12 @@ netlifyIdentity.refresh().then((jwt)=>console.log(jwt))
 
 // Change language
 netlifyIdentity.setLocale('en');
+
+function focusLandingBasic() {
+  document.getElementById("fName").focus();
+  $("input[name=option][value='Basic']").prop('checked', true);
+}
+function focusLandingAdv() {
+  document.getElementById("fName").focus();
+  $("input[name=option][value='Advanced']").prop('checked', true);
+}
